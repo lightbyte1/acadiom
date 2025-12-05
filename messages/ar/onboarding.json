@@ -1,0 +1,32 @@
+{
+  "title": "أكمل ملفك الشخصي",
+  "description": "يرجى تقديم معلوماتك لإكمال عملية التسجيل.",
+  "fields": {
+    "avatar_url": {
+      "label": "رابط الصورة الشخصية",
+      "placeholder": "رابط الصورة الشخصية (اختياري)",
+      "invalidMessage": "يرجى إدخال رابط صالح"
+    },
+    "first_name": {
+      "label": "الاسم الأول",
+      "placeholder": "الاسم الأول",
+      "requiredMessage": "الاسم الأول مطلوب",
+      "minMessage": "يجب أن يكون الاسم الأول على الأقل حرفين"
+    },
+    "last_name": {
+      "label": "اسم العائلة",
+      "placeholder": "اسم العائلة",
+      "requiredMessage": "اسم العائلة مطلوب",
+      "minMessage": "يجب أن يكون اسم العائلة على الأقل حرفين"
+    },
+    "organization_name": {
+      "label": "اسم المؤسسة",
+      "placeholder": "اسم المؤسسة",
+      "requiredMessage": "اسم المؤسسة مطلوب",
+      "minMessage": "يجب أن يكون اسم المؤسسة على الأقل حرفين"
+    }
+  },
+  "submitButton": "متابعة",
+  "optional": "اختياري",
+  "copyright": "© {year} Acadiom. جميع الحقوق محفوظة."
+}

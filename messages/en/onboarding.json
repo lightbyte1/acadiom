@@ -1,0 +1,32 @@
+{
+  "title": "Complete Your Profile",
+  "description": "Please provide your information to complete the onboarding process.",
+  "fields": {
+    "avatar_url": {
+      "label": "Avatar URL",
+      "placeholder": "Avatar URL (optional)",
+      "invalidMessage": "Please enter a valid URL"
+    },
+    "first_name": {
+      "label": "First Name",
+      "placeholder": "First Name",
+      "requiredMessage": "First name is required",
+      "minMessage": "First name must be at least 2 characters"
+    },
+    "last_name": {
+      "label": "Last Name",
+      "placeholder": "Last Name",
+      "requiredMessage": "Last name is required",
+      "minMessage": "Last name must be at least 2 characters"
+    },
+    "organization_name": {
+      "label": "Organization Name",
+      "placeholder": "Organization Name",
+      "requiredMessage": "Organization name is required",
+      "minMessage": "Organization name must be at least 2 characters"
+    }
+  },
+  "submitButton": "Continue",
+  "optional": "optional",
+  "copyright": "© {year} Acadiom. All rights reserved."
+}
