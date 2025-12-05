@@ -280,8 +280,8 @@ export default function AvatarUploader({
               min={1}
               max={3}
               step={0.05}
-              value={zoom}
-              onValueChange={(val) => setZoom(val)}
+              value={[zoom]}
+              onValueChange={(val: number[]) => setZoom(val[0])}
               className="flex-1"
             />
           </div>

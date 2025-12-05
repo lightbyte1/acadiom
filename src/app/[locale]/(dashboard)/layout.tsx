@@ -8,10 +8,8 @@ import React from "react";
 
 export default async function Layout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { orgId?: string };
 }) {
   // Fetch initial data server-side
   const { user, profile } = await getInitialAuthState();

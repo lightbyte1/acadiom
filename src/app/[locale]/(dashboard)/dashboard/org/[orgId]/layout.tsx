@@ -1,22 +1,21 @@
-import { getTenantsByOrganizationIdServer } from "@/lib/server";
-import React from "react";
+import { getTenantsByOrganizationIdServer } from "@/lib/server/tenants.server";
 
 export default async function OrgLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { orgId: string };
+  params: Promise<{ locale: string; orgId: string }>;
 }) {
   const { orgId } = await params;
 
   const tenants = await getTenantsByOrganizationIdServer(orgId);
-  console.log(tenants);
 
   return (
     <div>
       OrgPage {orgId}
       <div>Tenants: {tenants.length}</div>
+      {children}
     </div>
   );
 }
