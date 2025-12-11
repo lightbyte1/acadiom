@@ -103,7 +103,7 @@ export default function EmailStep() {
   });
 
   return (
-    <div className="flex flex-col space-y-6 w-full">
+    <div className="flex flex-col space-y-6 min-w-full">
       <Heading
         title={translations("title")}
         description={translations("description")}

@@ -115,7 +115,7 @@
 } */
 
 :root {
-  --radius: 1.2rem;
+  --radius: 1.35rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -323,25 +323,40 @@
 
 @layer components {
   .container {
-    @apply mx-auto max-w-fit px-8;
+    @apply mx-auto w-fit px-8;
   }
   .container-xs {
-    @apply mx-auto max-w-3/12 px-8;
+    @apply mx-auto w-full max-w-xs px-8;
   }
   .container-sm {
-    @apply mx-auto max-w-4/12 px-8;
+    @apply mx-auto w-full max-w-sm px-8;
   }
   .container-md {
-    @apply mx-auto max-w-9/12 px-8;
+    @apply mx-auto w-full max-w-md px-8;
   }
   .container-lg {
-    @apply mx-auto max-w-10/12 px-8;
+    @apply mx-auto w-full max-w-lg px-8;
   }
   .container-xl {
-    @apply mx-auto max-w-11/12 px-8;
+    @apply mx-auto w-full max-w-xl px-8;
   }
   .container-2xl {
-    @apply mx-auto max-w-12/12 px-8;
+    @apply mx-auto w-full max-w-2xl px-8;
+  }
+  .container-3xl {
+    @apply mx-auto w-full max-w-3xl px-8;
+  }
+  .container-4xl {
+    @apply mx-auto w-full max-w-4xl px-8;
+  }
+  .container-5xl {
+    @apply mx-auto w-full max-w-5xl px-8;
+  }
+  .container-6xl {
+    @apply mx-auto w-full max-w-6xl px-8;
+  }
+  .container-7xl {
+    @apply mx-auto w-full max-w-7xl px-8;
   }
 }
 
