@@ -24,7 +24,7 @@ export default function SignInPage() {
   ];
 
   return (
-    <div className="w-full pt-48 h-full container-sm flex items-center justify-center">
+    <div className="w-full pt-48 h-full flex items-center justify-center">
       <div className="flex flex-col space-y-4 items-center justify-center">
         <SignInFlowProvider>
           <MultistepProvider
