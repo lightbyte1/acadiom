@@ -1,21 +1,15 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { Button } from "../ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useState } from "react";
+import { Button } from "../ui/button";
 
 export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // Only render theme-dependent content after component has mounted
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    // Return a placeholder that matches the initial render
+  if (theme === undefined) {
     return (
       <Button variant="ghost" size="icon">
         <Moon className="size-4" />
